@@ -1,25 +1,22 @@
-# Celerio
-Celerio is a **Lightweight** and **Fast** Framework for Building HTTP **Web Apps** in **C#**.
+# Celerio.Text.Json
+Celerio.Text.Json - это форк веб-фреймворка **[Celerio](https://github.com/Oxule/Celerio)**, в котором была **вырезана библиотека [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)**. 
 
-## Installation
-Just install nuget package `https://www.nuget.org/packages/Celerio`
-
-## Usage
-1. At any point in your application, create pipeline instance
+## Использование
+1. Создайте экземпляр пайплайна
 
 ```csharp
     var pipeline = new Pipeline();
 ```
 
-2. If you're going to use authentication, then change crypto keys
+2. (Опционально) Добавьте аутентификацию с использованием собственного секретного ключа
 
 ```csharp
     pipeline.Authentification = new DefaultAuthentification("Your Unknown Secret Key");
 ```
 
-3. Configure pipeline any way you want (e.g. Change authentification scheme or add IP blacklist)
+3. Настройте пайплайн (например: измените схему аутентификации или добавьте черный список IP)
 
-4. Create anywhere an endpoint for e.g.
+4. Создайте конечную точку
 
 ```csharp
     [Route("GET", "/sum")]
@@ -29,19 +26,9 @@ Just install nuget package `https://www.nuget.org/packages/Celerio`
     }
 ```
 
-5. Then just create server instance and run it
+5. Создайте и запустите экземпляр сервера
 
 ```csharp
     Server server = new Server(pipeline);
     await server.StartListening(5000);
 ```
-
-## Documentation
-See documentation [here](DOCS.md)
-
-## Contacts
-Oxule
-
-`ribb2017@mail.ru`
-
-`@Oxule`

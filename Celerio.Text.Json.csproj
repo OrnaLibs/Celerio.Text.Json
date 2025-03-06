@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Celerio.Text.Json</Title>
+        <Authors>Oxule;OrnarasUS</Authors>
+        <Description>Celerio.Text.Json is a fork of Celerio framework, in which the Newtonsoft.Json library was removed.</Description>
+        <RepositoryUrl>https://github.com/OrnaLibs/Celerio.Text.Json/tree/main</RepositoryUrl>
+        <PackageTags></PackageTags>
+        <TargetFramework>net8.0</TargetFramework>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>Celerio.Text.Json</AssemblyName>
+        <PackageId>Celerio.Text.Json</PackageId>
+        <Company>OrnaLibs</Company>
+        <RootNamespace>Celerio</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
